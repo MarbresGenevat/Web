@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Els Meus Banys - Dissenys Exclusius</title>
+    <style>
+        /* Estils bàsics - pots personalitzar */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #222;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bany.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .productes {
+            padding: 50px 0;
+        }
+        .producte-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .producte {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .producte img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .producte-info {
+            padding: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Els Meus Banys</div>
+            <nav>
+                <ul>
+                    <li><a href="#inici">Inici</a></li>
+                    <li><a href="#productes">Productes</a></li>
+                    <li><a href="#contacte">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inici">
+        <div class="container">
+            <h1>Disseny de Banys a Mida</h1>
+            <p>Creem espais únics i funcionals adaptats a les teves necessitats</p>
+            <a href="#contacte" class="btn">Contacta'ns</a>
+        </div>
+    </section>
+
+    <section class="productes container" id="productes">
+        <h2>Els Nostres Productes</h2>
+        <p>Descobreix la nostra selecció de banys i elements per a lavabos</p>
+        
+        <div class="producte-grid">
+            <!-- Producte 1 -->
+            <div class="producte">
+                <img src="bany-modern.jpg" alt="Bany modern">
+                <div class="producte-info">
+                    <h3>Bany Modern</h3>
+                    <p>Disseny contemporani amb línies netes i materials d'alta qualitat.</p>
+                </div>
+            </div>
+            
+            <!-- Producte 2 -->
+            <div class="producte">
+                <img src="bany-classic.jpg" alt="Bany clàssic">
+                <div class="producte-info">
+                    <h3>Bany Clàssic</h3>
+                    <p>Elegància atemporal amb detalls artesans i materials nobles.</p>
+                </div>
+            </div>
+            
+            <!-- Producte 3 -->
+            <div class="producte">
+                <img src="bany-minimalista.jpg" alt="Bany minimalista">
+                <div class="producte-info">
+                    <h3>Bany Minimalista</h3>
+                    <p>Funcionalitat i simplicitat en un disseny pur i sense elements superflu.</p>
+                </div>
+            </div>
+            
+            <!-- Afegeix més productes segons necessitis -->
+        </div>
+    </section>
+
+    <section class="contacte container" id="contacte">
+        <h2>Contacta amb Nosaltres</h2>
+        <form>
+            <div>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="missatge">Missatge:</label>
+                <textarea id="missatge" name="missatge" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Els Meus Banys. Tots els drets reservats.</p>
+            <p>Adreça: La teva adreça | Telèfon: El teu telèfon | Email: el teu email</p>
+        </div>
+    </footer>
+</body>
+</html>
